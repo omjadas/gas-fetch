@@ -1,0 +1,21 @@
+{
+  "name": "gas-fetch",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint --max-warnings 0 \"src/**/*.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.14",
+    "@types/node-fetch": "^2.5.7",
+    "@typescript-eslint/eslint-plugin": "^3.5.0",
+    "@typescript-eslint/parser": "^3.5.0",
+    "eslint": "^7.4.0",
+    "typescript": "^3.9.6"
+  }
+}
