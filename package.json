@@ -10,6 +10,9 @@
   },
   "author": "",
   "license": "MIT",
+  "dependencies": {
+    "http-status-codes": "^1.4.0"
+  },
   "devDependencies": {
     "@types/google-apps-script": "^1.0.14",
     "@types/node-fetch": "^2.5.7",

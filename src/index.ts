@@ -1,3 +1,4 @@
+import { getStatusText } from "http-status-codes";
 import type { RequestInit, ResponseInit } from "node-fetch";
 import { Response } from "./response";
 
@@ -12,8 +13,11 @@ export function fetch(
     payload: init.body,
   });
 
+  const responseCode = response.getResponseCode();
+
   const responseInit: ResponseInit = {
-    status: response.getResponseCode(),
+    status: responseCode,
+    statusText: getStatusText(responseCode),
     url: resource,
   };
 
