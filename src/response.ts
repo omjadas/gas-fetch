@@ -5,16 +5,10 @@ export class Response {
   #body: string;
 
   // eslint-disable-next-line @typescript-eslint/explicit-member-accessibility
-  #redirected: boolean = false;
-
-  // eslint-disable-next-line @typescript-eslint/explicit-member-accessibility
   #status: number;
 
   // eslint-disable-next-line @typescript-eslint/explicit-member-accessibility
   #statusText: string;
-
-  // eslint-disable-next-line @typescript-eslint/explicit-member-accessibility
-  #type: string = "default";
 
   // eslint-disable-next-line @typescript-eslint/explicit-member-accessibility
   #url: string;
@@ -30,20 +24,12 @@ export class Response {
     return this.#status >= 200 && this.#status < 300;
   }
 
-  public get redirected(): boolean {
-    return this.#redirected;
-  }
-
   public get status(): number {
     return this.#status;
   }
 
   public get statusText(): string {
     return this.#statusText;
-  }
-
-  public get type(): string {
-    return this.#type;
   }
 
   public get url(): string {
