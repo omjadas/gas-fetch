@@ -1,4 +1,4 @@
-import { getStatusText } from "http-status-codes";
+import { getReasonPhrase } from "http-status-codes";
 import type { ResponseInit } from "node-fetch";
 import { Response } from "./response";
 
@@ -24,7 +24,7 @@ export function fetch(
 
     const responseInit: ResponseInit = {
       status: responseCode,
-      statusText: getStatusText(responseCode),
+      statusText: getReasonPhrase(responseCode),
       url: resource,
     };
 
